@@ -70,6 +70,17 @@
   font-size: x-large;
 }
 
+.karl > img{
+	background-color: white;
+	padding:8px;
+	border: solid black 4px;
+	margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+	height: 290px;
+	box-shadow: 5px, 5px, 5px;
+}
+
 .music-container{
 	background-color: white;
 	width: 100px;
