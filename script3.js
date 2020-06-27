@@ -4,6 +4,9 @@ title = document.querySelector('h1');
 disco = document.querySelector('.disco');
 landing = document.querySelector('.landing');
 topRightMoo = document.querySelector('.top-right-moo');
+player = document.getElementById('player');
+
+
 
 const bull = document.querySelector('#bull');
 const bull2 = document.createElement('img'); 
@@ -26,8 +29,28 @@ const disappear = (e) => {
         imgHolder.replaceChild(bull, bull2);
         topRightMoo.style.display = 'none';
     }
-    
 }
+
+
+
+// let dancing = false;
+// let startDance = setInterval(disappear, 500);
+
+// const danceInterval = (e) => {
+//     dancing = !dancing;
+//     topRightMoo.style.display = 'block';
+//     if (dancing){
+//         startDance();
+//     } else {
+//         clearInterval(startDance);
+//         topRightMoo.style.display = 'none';
+//     }
+// }
+
+// let danceInterval = () => { doesn't stop is the problem
+//     setInterval(disappear, 500);
+// }
+
 
 // const getCoords = (e) => {
 // 	coordinates.textContent = `X: ${e.offsetX} Y: ${e.offsetY}`;
@@ -40,10 +63,12 @@ const colorChange = (e) => {
 
 const colorChangeBlack = (e) => {
 	title.style.color = 'black';
-	landing.style.color = `rgb(243, 81, 243)`;
+	landing.style.color = 'black';
 }
 
 disco.addEventListener('mousemove', colorChange);
 disco.addEventListener('mouseleave', colorChangeBlack);
-imgHolder.addEventListener('click', disappear);
+player.addEventListener('play', disappear);
+player.addEventListener('pause', disappear);
+
 // document.querySelector('body').addEventListener('mousemove', getCoords);
