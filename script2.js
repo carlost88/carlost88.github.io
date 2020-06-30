@@ -1,13 +1,14 @@
-const taskInput = document.querySelector('#name');
+const nameInput = document.querySelector('#name');
 const form = document.querySelector('#submit-name');
 
 const enterName = (e) => {
-	if(taskInput.value == ''){
+	if(nameInput.value == ''){
 	alert('You can not insert a blank name!');
 } else {
-	let name = taskInput.value;
+	let name = nameInput.value;
 	localStorage.setItem('name', name);
-	if(confirm(`Thank you for registering, ${name}!`)) document.location = 'index.html';
+	if(confirm(`Thank you for registering, ${name}!`)) 
+		document.location = 'loading.html';
 }
 e.preventDefault();
 }

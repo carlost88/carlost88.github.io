@@ -10,7 +10,7 @@ player = document.getElementById('player');
 
 const bull = document.querySelector('#bull');
 const bull2 = document.createElement('img'); 
-bull2.src ="bull2.png";
+bull2.src ="img/bull2.png";
 
 const moo = document.createElement('p');
 moo.appendChild(document.createTextNode('Moo!'));

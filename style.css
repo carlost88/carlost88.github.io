@@ -46,6 +46,22 @@
 	font-family: 'Baloo Bhaina 2', cursive;
 }
 
+.loadingText{
+	background-color: white;
+	margin-top:80px;
+	width: 300px;
+	padding:34px;
+	font-size: xx-large;
+	font-weight: bold;
+	border: solid black 4px;
+	margin-left: auto;
+  	margin-right: auto;
+	text-align: center;
+	font-family: fantasy;
+	color: hotpink;
+    -webkit-text-stroke: 2px black;
+}
+
 .registering3{
 	background-color: white;
 	width: 330px;
@@ -76,9 +92,23 @@
 	border: solid black 4px;
 	margin-left: auto;
   margin-right: auto;
-  width: 300px;
-	height: 290px;
+  width: 25%;
+	height: 25%x;
 	box-shadow: 5px, 5px, 5px;
+}
+
+.loader > img{
+	background-color: white;
+	padding:8px;
+	border: solid black 4px;
+	position: fixed;
+	width: 150px;
+    height: auto;
+	/* these center the image */
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	
 }
 
 .music-container{
@@ -92,9 +122,7 @@
   font-size: x-large;
 }
 
-.getToKnow{
-  /*text-decoration: underline;*/
-}
+
 
 
 
@@ -121,12 +149,22 @@
     top: -25px; /* Moves the image 2px closer to the top of the page */
     right: 485px;
 }
-.welcome{
+.top-right{
 	position: absolute;
-  top: 8px;
   right: 16px;
   font-size: 18px;
   color: white;
+  top: 10px;
+}
+
+.welcome{
+	float: right;
+}
+
+.profile{
+	float:right;
+	height: 5%;
+	width: 5%;
 }
 
 .landing-text:hover {
@@ -209,7 +247,7 @@ h2{
   font-size: 18px;
   color: white;
 }
-}
+
 
 h5 {
 	font-family: fantasy;
@@ -227,10 +265,9 @@ body{
 	margin: 0px;
 }
 
-
 .cow::after {
   content: "";
-  background: url(cow.jpg);
+  background: url(img/cow.jpg);
   /* opacity: 0.3; */
   top: 0;
   left: 0;
